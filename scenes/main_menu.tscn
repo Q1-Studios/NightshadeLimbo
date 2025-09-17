@@ -324,8 +324,7 @@ offset_right = 220.0
 offset_bottom = -91.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Markus Müllauer
-"
+text = "Markus Müllauer"
 label_settings = ExtResource("12_ry7vv")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -433,8 +432,7 @@ offset_right = 220.0
 offset_bottom = 269.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "David Schwaiger
-"
+text = "David Schwaiger"
 label_settings = ExtResource("12_ry7vv")
 horizontal_alignment = 1
 vertical_alignment = 1
