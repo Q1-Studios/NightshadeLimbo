@@ -1,5 +1,7 @@
 extends Node
 
+var is_mobile: bool = OS.get_name() == "Android" or OS.get_name() == "iOS"
+
 enum Type {KEYBOARD, TOUCH, PLAYSTATION, XBOX, NINTENDO, UNKNOWN}
 var type : Type = Type.KEYBOARD
 var last_type : Type
@@ -28,7 +30,7 @@ func _ready() -> void:
 	process_mode = PROCESS_MODE_ALWAYS
 	
 	# If a mobile OS is detected, initially assume input mode as touch
-	if OS.get_name() == "Android" or OS.get_name() == "iOS":
+	if is_mobile:
 		type = Type.TOUCH
 	
 	# Assign correct category based on type
@@ -37,7 +39,10 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	# Keyboard is used
 	if event is InputEventKey:
-		type = Type.KEYBOARD
+		# Phone volume controls are also keys, these shouldn't trigger a switch
+		if (not is_mobile or event.as_text_keycode() not in
+		["VolumeUp", "VolumeDown", "VolumeMute", "Unknown"]):
+			type = Type.KEYBOARD
 	
 	# Touchscreen is used
 	elif event is InputEventScreenTouch:
