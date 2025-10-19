@@ -1,6 +1,8 @@
 extends ColorRect
 
 @export var transition_duration : float = 1.5
+@export var web_quit_hint: Label
+
 var transition = false
 var quit = false
 
@@ -19,6 +21,8 @@ func _process(delta: float) -> void:
 			modulate.a = 1
 			transition = false
 			if quit:
+				if OS.get_name() == "Web":
+					web_quit_hint.show()
 				SceneManager.quit_game()
 			else:
 				Data.reset_run()
