@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://472jwjdnkqxw"]
+[gd_scene format=3 uid="uid://472jwjdnkqxw"]
 
 [ext_resource type="Texture2D" uid="uid://djdkq5m8hjrmr" path="res://assets/sprites/tomato_icon.png" id="1_xqyr8"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=765037223]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -15,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.27, 1.27)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1407810572]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

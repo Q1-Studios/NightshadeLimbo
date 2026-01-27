@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cs5d1e1oq65hf"]
+[gd_scene format=3 uid="uid://cs5d1e1oq65hf"]
 
 [ext_resource type="PackedScene" uid="uid://4ltw4ue7a55q" path="res://scenes/ui/submenu.tscn" id="1_426du"]
 [ext_resource type="Texture2D" uid="uid://dqk80mvdvka7u" path="res://assets/sprites/background.jpg" id="2_ho7xl"]
@@ -64,28 +64,28 @@ scale_min = 0.02
 scale_max = 0.05
 alpha_curve = SubResource("CurveTexture_2tkpk")
 
-[node name="TutorialSubmenu" instance=ExtResource("1_426du")]
+[node name="TutorialSubmenu" unique_id=1276729717 instance=ExtResource("1_426du")]
 light_mask = 0
 
-[node name="SubmenuManager" parent="." index="0" node_paths=PackedStringArray("submenus") instance=ExtResource("2_qcur6")]
+[node name="SubmenuManager" parent="." index="0" unique_id=665524846 node_paths=PackedStringArray("submenus") instance=ExtResource("2_qcur6")]
 light_mask = 0
 submenus = [NodePath("../MainSubmenu"), NodePath("../RemnantSubmenu")]
 
-[node name="MainSubmenu" parent="." index="1" node_paths=PackedStringArray("ui_scalers") instance=ExtResource("1_426du")]
+[node name="MainSubmenu" parent="." index="1" unique_id=2064864163 node_paths=PackedStringArray("ui_scalers") instance=ExtResource("1_426du")]
 light_mask = 0
 ui_scalers = [NodePath("TutorialButtonSelector/ButtonRowConfig/UIScaler"), NodePath("TutorialButtonSelector/ButtonRowConfig2/UIScaler")]
 
-[node name="Background" type="Sprite2D" parent="MainSubmenu" index="0"]
+[node name="Background" type="Sprite2D" parent="MainSubmenu" index="0" unique_id=1179780011]
 light_mask = 0
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("2_ho7xl")
 
-[node name="Vignette" type="Sprite2D" parent="MainSubmenu" index="1"]
+[node name="Vignette" type="Sprite2D" parent="MainSubmenu" index="1" unique_id=379509892]
 light_mask = 0
 scale = Vector2(1.15, 1.15)
 texture = ExtResource("16_avy2b")
 
-[node name="Title" type="Label" parent="MainSubmenu" index="2"]
+[node name="Title" type="Label" parent="MainSubmenu" index="2" unique_id=201504344]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -104,7 +104,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="MainSubmenu" index="3"]
+[node name="Sprite2D" type="Sprite2D" parent="MainSubmenu" index="3" unique_id=1523767079]
 light_mask = 0
 scale = Vector2(0.65, 0.65)
 texture = ExtResource("4_x6hhj")
@@ -112,7 +112,7 @@ hframes = 5
 vframes = 2
 frame = 8
 
-[node name="SmartInputIcon" parent="MainSubmenu" index="4" instance=ExtResource("5_csx0y")]
+[node name="SmartInputIcon" parent="MainSubmenu" index="4" unique_id=1494956529 instance=ExtResource("5_csx0y")]
 position = Vector2(-500, 100)
 keyboard = ExtResource("6_l5rbf")
 touch = ExtResource("9_lsods")
@@ -120,7 +120,7 @@ playstation = ExtResource("7_q7xag")
 xbox = ExtResource("7_q7xag")
 nintendo = ExtResource("7_q7xag")
 
-[node name="Label" type="Label" parent="MainSubmenu/SmartInputIcon" index="1"]
+[node name="Label" type="Label" parent="MainSubmenu/SmartInputIcon" index="1" unique_id=1734265572]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -140,7 +140,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="SmartInputIcon2" parent="MainSubmenu" index="5" instance=ExtResource("5_csx0y")]
+[node name="SmartInputIcon2" parent="MainSubmenu" index="5" unique_id=502225029 instance=ExtResource("5_csx0y")]
 position = Vector2(500, 100)
 keyboard = ExtResource("9_5k76c")
 touch = ExtResource("13_u1g75")
@@ -148,7 +148,7 @@ playstation = ExtResource("10_n4thr")
 xbox = ExtResource("11_wjk5g")
 nintendo = ExtResource("12_0cgsy")
 
-[node name="Label" type="Label" parent="MainSubmenu/SmartInputIcon2" index="1"]
+[node name="Label" type="Label" parent="MainSubmenu/SmartInputIcon2" index="1" unique_id=1559351420]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -168,7 +168,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="TextWhite" type="Label" parent="MainSubmenu" index="6"]
+[node name="TextWhite" type="Label" parent="MainSubmenu" index="6" unique_id=1115626433]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -188,7 +188,7 @@ horizontal_alignment = 1
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="TextRed" type="Label" parent="MainSubmenu" index="7"]
+[node name="TextRed" type="Label" parent="MainSubmenu" index="7" unique_id=1394015018]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -207,49 +207,49 @@ horizontal_alignment = 1
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="TutorialButtonSelector" parent="MainSubmenu" index="8" node_paths=PackedStringArray("button_rows") instance=ExtResource("13_5sat5")]
+[node name="TutorialButtonSelector" parent="MainSubmenu" index="8" unique_id=1856116505 node_paths=PackedStringArray("button_rows") instance=ExtResource("13_5sat5")]
 light_mask = 0
 button_rows = [NodePath("ButtonRowConfig"), NodePath("ButtonRowConfig2")]
 
-[node name="ButtonRowConfig" parent="MainSubmenu/TutorialButtonSelector" index="0" node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
+[node name="ButtonRowConfig" parent="MainSubmenu/TutorialButtonSelector" index="0" unique_id=1088993694 node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
 light_mask = 0
 buttons = [NodePath("UIScaler/CloseButton")]
 
-[node name="UIScaler" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig" index="0" instance=ExtResource("19_7ijcd")]
+[node name="UIScaler" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig" index="0" unique_id=1124037057 instance=ExtResource("19_7ijcd")]
 mobile_position = Vector2(-450, 250)
 mobile_scale = Vector2(1.5, 1.5)
 
-[node name="CloseButton" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig/UIScaler" index="0" instance=ExtResource("15_7orun")]
+[node name="CloseButton" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig/UIScaler" index="0" unique_id=1829390130 instance=ExtResource("15_7orun")]
 position = Vector2(860, -440)
 
-[node name="ButtonRowConfig2" parent="MainSubmenu/TutorialButtonSelector" index="1" node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
+[node name="ButtonRowConfig2" parent="MainSubmenu/TutorialButtonSelector" index="1" unique_id=2138789822 node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
 light_mask = 0
 buttons = [NodePath("UIScaler/TooHardButton")]
 
-[node name="UIScaler" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2" index="0" instance=ExtResource("19_7ijcd")]
+[node name="UIScaler" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2" index="0" unique_id=886064505 instance=ExtResource("19_7ijcd")]
 mobile_position = Vector2(-550, -300)
 mobile_scale = Vector2(1.6, 1.6)
 
-[node name="TooHardButton" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler" index="0" instance=ExtResource("17_bgwk8")]
+[node name="TooHardButton" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler" index="0" unique_id=910808905 instance=ExtResource("17_bgwk8")]
 position = Vector2(800, 450)
 scale = Vector2(0.65, 0.65)
 script = ExtResource("19_w1ycx")
 
-[node name="AnimatedSprite2D" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler/TooHardButton" index="1"]
+[node name="AnimatedSprite2D" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler/TooHardButton" index="1" unique_id=909565556]
 scale = Vector2(1.325, 1)
 
-[node name="Label" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler/TooHardButton" index="2"]
+[node name="Label" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler/TooHardButton" index="2" unique_id=1543461642]
 text = "Still too hard?"
 
-[node name="CollisionShape2D" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler/TooHardButton/Area2DButtonSrc" index="0"]
+[node name="CollisionShape2D" parent="MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler/TooHardButton/Area2DButtonSrc" parent_id_path=PackedInt32Array(910808905, 854129777) index="0" unique_id=1992279127]
 position = Vector2(0.5, 0)
 
-[node name="RemnantSubmenu" parent="." index="2" node_paths=PackedStringArray("ui_scalers") instance=ExtResource("1_426du")]
+[node name="RemnantSubmenu" parent="." index="2" unique_id=671063030 node_paths=PackedStringArray("ui_scalers") instance=ExtResource("1_426du")]
 visible = false
 light_mask = 0
 ui_scalers = [NodePath("RemnantButtonSelector/ButtonRowConfig/UIScaler")]
 
-[node name="ColorRect" type="ColorRect" parent="RemnantSubmenu" index="0"]
+[node name="ColorRect" type="ColorRect" parent="RemnantSubmenu" index="0" unique_id=549994907]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -265,16 +265,16 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="RemnantEnabledLayer" type="Node2D" parent="RemnantSubmenu" index="1"]
+[node name="RemnantEnabledLayer" type="Node2D" parent="RemnantSubmenu" index="1" unique_id=932985323]
 visible = false
 light_mask = 0
 script = ExtResource("19_r8ekq")
 
-[node name="Eyes" type="Sprite2D" parent="RemnantSubmenu/RemnantEnabledLayer" index="0"]
+[node name="Eyes" type="Sprite2D" parent="RemnantSubmenu/RemnantEnabledLayer" index="0" unique_id=1666896496]
 light_mask = 0
 texture = ExtResource("19_chnp1")
 
-[node name="Title" type="Label" parent="RemnantSubmenu" index="2"]
+[node name="Title" type="Label" parent="RemnantSubmenu" index="2" unique_id=2016581693]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -292,7 +292,7 @@ label_settings = ExtResource("3_pals6")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Text" type="Label" parent="RemnantSubmenu" index="3"]
+[node name="Text" type="Label" parent="RemnantSubmenu" index="3" unique_id=1684543542]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -314,7 +314,7 @@ label_settings = ExtResource("8_ib0yt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Sure" type="Label" parent="RemnantSubmenu" index="4"]
+[node name="Sure" type="Label" parent="RemnantSubmenu" index="4" unique_id=1665765390]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -332,48 +332,48 @@ label_settings = SubResource("LabelSettings_dhwb4")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RemnantButtonSelector" parent="RemnantSubmenu" index="5" node_paths=PackedStringArray("button_rows") instance=ExtResource("13_5sat5")]
+[node name="RemnantButtonSelector" parent="RemnantSubmenu" index="5" unique_id=204731639 node_paths=PackedStringArray("button_rows") instance=ExtResource("13_5sat5")]
 light_mask = 0
 button_rows = [NodePath("ButtonRowConfig"), NodePath("ButtonRowConfig2")]
 
-[node name="ButtonRowConfig" parent="RemnantSubmenu/RemnantButtonSelector" index="0" node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
+[node name="ButtonRowConfig" parent="RemnantSubmenu/RemnantButtonSelector" index="0" unique_id=136023679 node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
 light_mask = 0
 buttons = [NodePath("UIScaler/CloseButton")]
 
-[node name="UIScaler" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig" index="0" instance=ExtResource("19_7ijcd")]
+[node name="UIScaler" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig" index="0" unique_id=1517813870 instance=ExtResource("19_7ijcd")]
 mobile_position = Vector2(-450, 250)
 mobile_scale = Vector2(1.5, 1.5)
 
-[node name="CloseButton" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig/UIScaler" index="0" instance=ExtResource("15_7orun")]
+[node name="CloseButton" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig/UIScaler" index="0" unique_id=734935904 instance=ExtResource("15_7orun")]
 position = Vector2(860, -440)
 
-[node name="ButtonRowConfig2" parent="RemnantSubmenu/RemnantButtonSelector" index="1" node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
+[node name="ButtonRowConfig2" parent="RemnantSubmenu/RemnantButtonSelector" index="1" unique_id=385667432 node_paths=PackedStringArray("buttons") instance=ExtResource("14_k0sss")]
 light_mask = 0
 buttons = [NodePath("ConjureToggle")]
 
-[node name="ConjureToggle" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2" index="0" instance=ExtResource("19_snqau")]
+[node name="ConjureToggle" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2" index="0" unique_id=977696707 instance=ExtResource("19_snqau")]
 position = Vector2(0, 350)
 scale = Vector2(1.5, 1.5)
 script = ExtResource("21_wk34c")
 toggled_fill_color = Color(0.298039, 0.807843, 1, 1)
 selected_color = Color(0.29621, 0.809, 1, 1)
 
-[node name="FillTexture" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="1"]
+[node name="FillTexture" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="1" unique_id=614620693]
 light_mask = 0
 
-[node name="AnimatedSprite2D" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="2"]
+[node name="AnimatedSprite2D" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="2" unique_id=909565556]
 scale = Vector2(1.65, 1)
 
-[node name="Label" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="3"]
+[node name="Label" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="3" unique_id=1543461642]
 offset_left = -203.0
 offset_right = 203.0
 text = "Conjure remnant"
 
-[node name="ClickSFX" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="4"]
+[node name="ClickSFX" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="4" unique_id=2108907842]
 stream = ExtResource("21_uctbs")
 volume_db = -15.0
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="5"]
+[node name="GPUParticles2D" type="GPUParticles2D" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="5" unique_id=20412363]
 light_mask = 0
 position = Vector2(-1.33333, -2.66667)
 amount = 30
@@ -381,14 +381,14 @@ texture = ExtResource("23_4ycvk")
 lifetime = 2.0
 process_material = SubResource("ParticleProcessMaterial_0ftdt")
 
-[node name="ClickOffSFX" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="6"]
+[node name="ClickOffSFX" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="6" unique_id=750903137]
 stream = ExtResource("26_hxbkm")
 volume_db = -15.0
 
-[node name="CollisionShape2D" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle/Area2DButtonSrc" index="0"]
+[node name="CollisionShape2D" parent="RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle/Area2DButtonSrc" parent_id_path=PackedInt32Array(977696707, 854129777) index="0" unique_id=1992279127]
 position = Vector2(-0.666664, 0)
 
-[node name="BackgroundMusic" type="AudioStreamPlayer" parent="RemnantSubmenu/RemnantButtonSelector" index="2"]
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="RemnantSubmenu/RemnantButtonSelector" index="2" unique_id=1923140005]
 stream = ExtResource("21_n3rsh")
 volume_db = -5.0
 pitch_scale = 0.6

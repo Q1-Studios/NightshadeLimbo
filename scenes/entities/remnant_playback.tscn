@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://rwl76vd53mg2"]
+[gd_scene format=3 uid="uid://rwl76vd53mg2"]
 
 [ext_resource type="Texture2D" uid="uid://wdy32rlx6ua4" path="res://assets/sprites/ghost_sprite_sheet.png" id="1_nrlwg"]
 [ext_resource type="Script" uid="uid://cpxnvf2pxwqva" path="res://scripts/entities/RemnantPlayback.gd" id="2_vd8st"]
@@ -361,7 +361,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1325546636]
 self_modulate = Color(1, 1, 1, 0.579)
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_qsbqb")

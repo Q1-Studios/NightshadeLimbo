@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccgy32ui852hb"]
+[gd_scene format=3 uid="uid://ccgy32ui852hb"]
 
 [ext_resource type="Script" uid="uid://tmygtyi0gwch" path="res://scripts/controls/PressableScreenArea.gd" id="1_t1d88"]
 [ext_resource type="Texture2D" uid="uid://b83dgqy4bguce" path="res://assets/sprites/buttons/touch/AttackPressed.png" id="2_4558u"]
@@ -18,7 +18,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="PressableScreenArea" type="Control"]
+[node name="PressableScreenArea" type="Control" unique_id=243738683]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 960.0
@@ -26,7 +26,7 @@ offset_bottom = 1080.0
 mouse_filter = 2
 script = ExtResource("1_t1d88")
 
-[node name="ButtonSprite" type="AnimatedSprite2D" parent="."]
+[node name="ButtonSprite" type="AnimatedSprite2D" parent="." unique_id=536894577]
 modulate = Color(1, 1, 1, 0.470588)
 position = Vector2(680, 800)
 scale = Vector2(1.5, 1.5)

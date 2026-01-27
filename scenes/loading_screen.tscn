@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dom3anlmfh46m"]
+[gd_scene format=3 uid="uid://dom3anlmfh46m"]
 
 [ext_resource type="Script" uid="uid://bsiagyykovcfy" path="res://scripts/loader/SceneLoader.gd" id="1_b201a"]
 [ext_resource type="LabelSettings" uid="uid://s0qyqn44ctv7" path="res://assets/settings/labels/big_text_label.tres" id="2_bvnq6"]
@@ -43,29 +43,27 @@ _data = {
 &"loading": SubResource("Animation_s65n3")
 }
 
-[node name="LoadingScreen" type="Node2D"]
+[node name="LoadingScreen" type="Node2D" unique_id=1310860244]
 process_mode = 3
 script = ExtResource("1_b201a")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=1139698146]
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
 
-[node name="Text" type="Node2D" parent="."]
+[node name="Text" type="Node2D" parent="." unique_id=1808094014]
 
-[node name="Tomato" type="Sprite2D" parent="Text"]
+[node name="Tomato" type="Sprite2D" parent="Text" unique_id=184522514]
 position = Vector2(1420, 1010)
 scale = Vector2(0.255, 0.255)
 texture = ExtResource("2_w7eb3")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Text/Tomato"]
-libraries = {
-&"": SubResource("AnimationLibrary_f3ux6")
-}
-autoplay = "loading"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text/Tomato" unique_id=1431760023]
+libraries/ = SubResource("AnimationLibrary_f3ux6")
+autoplay = &"loading"
 
-[node name="Label" type="Label" parent="Text"]
+[node name="Label" type="Label" parent="Text" unique_id=622801136]
 offset_left = 1510.0
 offset_top = 948.0
 offset_right = 1754.0
@@ -73,21 +71,21 @@ offset_bottom = 1072.0
 text = "Loading"
 label_settings = ExtResource("2_bvnq6")
 
-[node name="Dots" type="Node2D" parent="Text"]
+[node name="Dots" type="Node2D" parent="Text" unique_id=1368735760]
 script = ExtResource("3_8xd4m")
 speed = 3.0
 
-[node name="Sprite2D" type="Sprite2D" parent="Text/Dots"]
+[node name="Sprite2D" type="Sprite2D" parent="Text/Dots" unique_id=1822872037]
 position = Vector2(1775, 1010)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_hbq67")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Text/Dots"]
+[node name="Sprite2D2" type="Sprite2D" parent="Text/Dots" unique_id=1581817651]
 position = Vector2(1800, 1010)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_hbq67")
 
-[node name="Sprite2D3" type="Sprite2D" parent="Text/Dots"]
+[node name="Sprite2D3" type="Sprite2D" parent="Text/Dots" unique_id=1913824530]
 position = Vector2(1825, 1010)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_hbq67")

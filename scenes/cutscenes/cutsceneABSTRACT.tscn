@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bgn5ighrttryb"]
+[gd_scene format=3 uid="uid://bgn5ighrttryb"]
 
 [ext_resource type="Script" uid="uid://ljwt18cn4wuq" path="res://scripts/cutscenes/Cutscene.gd" id="1_8yita"]
 [ext_resource type="PackedScene" uid="uid://muherruagjtj" path="res://scenes/main.tscn" id="2_nmqqy"]
@@ -54,17 +54,17 @@ font_color = Color(0.368479, 0.368479, 0.368479, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d154h"]
 size = Vector2(239.86, 154.875)
 
-[node name="Cutscene" type="Node2D"]
+[node name="Cutscene" type="Node2D" unique_id=2076554817]
 script = ExtResource("1_8yita")
 load_on_skip = ExtResource("2_nmqqy")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=1103763788]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="background" type="Panel" parent="Control"]
+[node name="background" type="Panel" parent="Control" unique_id=198732811]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
@@ -75,19 +75,19 @@ offset_bottom = 527.0
 grow_vertical = 2
 theme_override_styles/panel = ExtResource("2_ommmk")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=858132074]
 layout_mode = 0
 offset_left = -960.0
 offset_top = -540.0
 offset_right = 960.0
 offset_bottom = 540.0
 
-[node name="LeftRibbon" type="Panel" parent="Control/HBoxContainer"]
+[node name="LeftRibbon" type="Panel" parent="Control/HBoxContainer" unique_id=1009307049]
 custom_minimum_size = Vector2(384, 0)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("2_ommmk")
 
-[node name="ClickNextHint" type="TextureRect" parent="Control/HBoxContainer/LeftRibbon"]
+[node name="ClickNextHint" type="TextureRect" parent="Control/HBoxContainer/LeftRibbon" unique_id=1418387731]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -100,30 +100,28 @@ scale = Vector2(0.605, 0.605)
 texture = ExtResource("4_q35s7")
 stretch_mode = 5
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/HBoxContainer/LeftRibbon/ClickNextHint"]
-libraries = {
-"": SubResource("AnimationLibrary_ghd1h")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/HBoxContainer/LeftRibbon/ClickNextHint" unique_id=1721131356]
+libraries/ = SubResource("AnimationLibrary_ghd1h")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer" unique_id=1071126347]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Picture" type="Panel" parent="Control/HBoxContainer/VBoxContainer"]
+[node name="Picture" type="Panel" parent="Control/HBoxContainer/VBoxContainer" unique_id=1953404243]
 custom_minimum_size = Vector2(0, 720)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("2_ommmk")
 
-[node name="Text" type="Panel" parent="Control/HBoxContainer/VBoxContainer"]
+[node name="Text" type="Panel" parent="Control/HBoxContainer/VBoxContainer" unique_id=176048045]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = ExtResource("2_ommmk")
 script = ExtResource("4_ld4jv")
 
-[node name="TypewriterAudio" type="AudioStreamPlayer" parent="Control/HBoxContainer/VBoxContainer/Text"]
+[node name="TypewriterAudio" type="AudioStreamPlayer" parent="Control/HBoxContainer/VBoxContainer/Text" unique_id=1053138278]
 bus = &"TypewriterPitcher"
 
-[node name="Label" type="Label" parent="Control/HBoxContainer/VBoxContainer/Text"]
+[node name="Label" type="Label" parent="Control/HBoxContainer/VBoxContainer/Text" unique_id=1693452610]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -139,12 +137,12 @@ clip_text = true
 text_overrun_behavior = 3
 visible_characters_behavior = 1
 
-[node name="RightRibbon" type="Panel" parent="Control/HBoxContainer"]
+[node name="RightRibbon" type="Panel" parent="Control/HBoxContainer" unique_id=1929659713]
 custom_minimum_size = Vector2(384, 0)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("2_ommmk")
 
-[node name="HoldToSkip" type="Label" parent="Control/HBoxContainer/RightRibbon"]
+[node name="HoldToSkip" type="Label" parent="Control/HBoxContainer/RightRibbon" unique_id=704764422]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 1.0
@@ -159,7 +157,7 @@ text = "Hold      to Skip"
 label_settings = SubResource("LabelSettings_5bb0l")
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="Control/HBoxContainer/RightRibbon/HoldToSkip"]
+[node name="ProgressBar" type="ProgressBar" parent="Control/HBoxContainer/RightRibbon/HoldToSkip" unique_id=1129829358]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -169,20 +167,20 @@ grow_vertical = 2
 max_value = 2.0
 show_percentage = false
 
-[node name="SmartInputIcon" parent="Control/HBoxContainer/RightRibbon/HoldToSkip" instance=ExtResource("5_cnvi6")]
+[node name="SmartInputIcon" parent="Control/HBoxContainer/RightRibbon/HoldToSkip" unique_id=1870209171 instance=ExtResource("5_cnvi6")]
 modulate = Color(1, 1, 1, 0.288)
 position = Vector2(166, 20)
 scale = Vector2(0.135, 0.135)
 
-[node name="SkipTouchButton" parent="Control/HBoxContainer/RightRibbon" instance=ExtResource("7_v458j")]
+[node name="SkipTouchButton" parent="Control/HBoxContainer/RightRibbon" unique_id=1412477681 instance=ExtResource("7_v458j")]
 visible = false
 position = Vector2(135, 60)
 scale = Vector2(1.375, 1.375)
 shape = SubResource("RectangleShape2D_d154h")
 
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1029855763]
 bus = &"Music"
 
-[node name="MouseHider" parent="." instance=ExtResource("5_p05me")]
+[node name="MouseHider" parent="." unique_id=472595767 instance=ExtResource("5_p05me")]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1201065257]

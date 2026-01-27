@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://s47feaqqdtgj"]
+[gd_scene format=3 uid="uid://s47feaqqdtgj"]
 
 [ext_resource type="Script" uid="uid://dxt7llmxrvt2g" path="res://scripts/entities/Boss.gd" id="1_3ifcl"]
 [ext_resource type="Texture2D" uid="uid://caai8dkei1rht" path="res://assets/sprites/dropshadow.png" id="2_4c6eb"]
@@ -2573,7 +2573,7 @@ shader_parameter/fps = 12.0
 shader_parameter/stretch = 0.5
 shader_parameter/flashing = 0.1
 
-[node name="Boss" type="StaticBody2D"]
+[node name="Boss" type="StaticBody2D" unique_id=685442603]
 position = Vector2(960, 540)
 script = ExtResource("1_3ifcl")
 projectile_scene = ExtResource("2_jst8t")
@@ -2582,85 +2582,81 @@ artillery_scene = ExtResource("4_ndv06")
 vine_scene = ExtResource("5_0888b")
 impact_scene = ExtResource("6_ccik4")
 
-[node name="DamageZone" type="Area2D" parent="."]
+[node name="DamageZone" type="Area2D" parent="." unique_id=1846170652]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone" unique_id=2047879167]
 position = Vector2(0, 120)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_mp6rq")
 debug_color = Color(0.829367, 0.394127, 0, 0.42)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1446571634]
 position = Vector2(-5, 114.5)
 scale = Vector2(1.19, 1)
 shape = SubResource("RectangleShape2D_33fff")
 
-[node name="DropShadow" type="Sprite2D" parent="."]
+[node name="DropShadow" type="Sprite2D" parent="." unique_id=1240214418]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(0, 126)
 scale = Vector2(0.54, 0.54)
 texture = ExtResource("2_4c6eb")
 
-[node name="Thorns" type="Sprite2D" parent="."]
+[node name="Thorns" type="Sprite2D" parent="." unique_id=208366242]
 position = Vector2(2, 94)
 scale = Vector2(0.485, 0.33)
 texture = ExtResource("3_5l0u7")
 
-[node name="Tomato" type="Sprite2D" parent="."]
+[node name="Tomato" type="Sprite2D" parent="." unique_id=1429889793]
 z_index = 1
 texture = ExtResource("3_1ef8q")
 hframes = 5
 frame = 2
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Tomato"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Tomato" unique_id=429590891]
 root_node = NodePath("../..")
-libraries = {
-&"": SubResource("AnimationLibrary_nmcjg")
-}
+libraries/ = SubResource("AnimationLibrary_nmcjg")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Tomato"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Tomato" unique_id=425159743]
 max_polyphony = 10
 bus = &"SFX"
 
-[node name="OccluderMimic" parent="." node_paths=PackedStringArray("mimic_src") instance=ExtResource("22_hf5xq")]
+[node name="OccluderMimic" parent="." unique_id=942489684 node_paths=PackedStringArray("mimic_src") instance=ExtResource("22_hf5xq")]
 mimic_src = NodePath("../Tomato")
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="OccluderMimic"]
+[node name="LightOccluder2D" type="LightOccluder2D" parent="OccluderMimic" unique_id=842371122]
 visible = false
 occluder = SubResource("OccluderPolygon2D_pnw1c")
 
-[node name="LightOccluder2D2" type="LightOccluder2D" parent="OccluderMimic"]
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="OccluderMimic" unique_id=724970372]
 position = Vector2(0, 20.87)
 occluder = SubResource("OccluderPolygon2D_3v6nc")
 
-[node name="LightOccluder2D3" type="LightOccluder2D" parent="OccluderMimic"]
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="OccluderMimic" unique_id=1378095720]
 visible = false
 position = Vector2(0, -500)
 scale = Vector2(0.609, 1)
 occluder = SubResource("OccluderPolygon2D_26ud2")
 
-[node name="LightOccluder2D4" type="LightOccluder2D" parent="OccluderMimic"]
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="OccluderMimic" unique_id=1573197348]
 visible = false
 occluder = SubResource("OccluderPolygon2D_3j4vf")
 
-[node name="AttackTimeline" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_14rc6")
-}
+[node name="AttackTimeline" type="AnimationPlayer" parent="." unique_id=1296733098]
+libraries/ = SubResource("AnimationLibrary_14rc6")
 
-[node name="VulnerableOverlay" type="Sprite2D" parent="."]
+[node name="VulnerableOverlay" type="Sprite2D" parent="." unique_id=1204452297]
 visible = false
 z_index = 1
 scale = Vector2(0.455, 0.455)
 texture = ExtResource("20_0q56x")
 
-[node name="Thorns2" type="Sprite2D" parent="."]
+[node name="Thorns2" type="Sprite2D" parent="." unique_id=1120874141]
 z_index = 1
 position = Vector2(-5, 107)
 scale = Vector2(0.468, 0.422)
 texture = ExtResource("22_kub0s")
 
-[node name="PostProcessing" type="Control" parent="."]
+[node name="PostProcessing" type="Control" parent="." unique_id=1007281381]
 z_index = 2
 layout_mode = 3
 anchors_preset = 0
@@ -2669,10 +2665,10 @@ offset_bottom = 40.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ScribbeLine" type="Node2D" parent="PostProcessing"]
+[node name="ScribbeLine" type="Node2D" parent="PostProcessing" unique_id=556578932]
 visible = false
 
-[node name="AuraOverlay" type="AnimatedSprite2D" parent="PostProcessing/ScribbeLine"]
+[node name="AuraOverlay" type="AnimatedSprite2D" parent="PostProcessing/ScribbeLine" unique_id=1762704145]
 self_modulate = Color(1, 1, 1, 0.521569)
 position = Vector2(0, -11)
 scale = Vector2(1.9, 1.59)
@@ -2680,7 +2676,7 @@ sprite_frames = SubResource("SpriteFrames_j3eyk")
 autoplay = "default"
 frame_progress = 0.625311
 
-[node name="AuraOverlay2" type="AnimatedSprite2D" parent="PostProcessing/ScribbeLine"]
+[node name="AuraOverlay2" type="AnimatedSprite2D" parent="PostProcessing/ScribbeLine" unique_id=825616103]
 self_modulate = Color(1, 1, 1, 0.568627)
 position = Vector2(0, -11)
 scale = Vector2(1.9, 1.59)
@@ -2688,12 +2684,12 @@ sprite_frames = SubResource("SpriteFrames_j3eyk")
 autoplay = "default"
 frame = 3
 
-[node name="ColorInvert" type="CanvasLayer" parent="PostProcessing"]
+[node name="ColorInvert" type="CanvasLayer" parent="PostProcessing" unique_id=1298592600]
 visible = false
 follow_viewport_enabled = true
 follow_viewport_scale = 2.0
 
-[node name="Shader_ColorInvert" type="ColorRect" parent="PostProcessing/ColorInvert"]
+[node name="Shader_ColorInvert" type="ColorRect" parent="PostProcessing/ColorInvert" unique_id=214388748]
 material = SubResource("ShaderMaterial_5mocj")
 anchors_preset = 15
 anchor_right = 1.0
@@ -2703,12 +2699,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Mirage" type="CanvasLayer" parent="PostProcessing"]
+[node name="Mirage" type="CanvasLayer" parent="PostProcessing" unique_id=1733133746]
 visible = false
 follow_viewport_enabled = true
 follow_viewport_scale = 2.0
 
-[node name="Shader_Mirage" type="ColorRect" parent="PostProcessing/Mirage"]
+[node name="Shader_Mirage" type="ColorRect" parent="PostProcessing/Mirage" unique_id=130942619]
 material = SubResource("ShaderMaterial_b2wim")
 anchors_preset = 15
 anchor_right = 1.0
@@ -2719,12 +2715,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="Contrast" type="CanvasLayer" parent="PostProcessing"]
+[node name="Contrast" type="CanvasLayer" parent="PostProcessing" unique_id=1135509565]
 visible = false
 follow_viewport_enabled = true
 follow_viewport_scale = 2.0
 
-[node name="Shader_Contrast" type="ColorRect" parent="PostProcessing/Contrast"]
+[node name="Shader_Contrast" type="ColorRect" parent="PostProcessing/Contrast" unique_id=1969909287]
 material = SubResource("ShaderMaterial_8eng0")
 anchors_preset = 15
 anchor_right = 1.0
@@ -2734,12 +2730,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Normalized" type="CanvasLayer" parent="PostProcessing"]
+[node name="Normalized" type="CanvasLayer" parent="PostProcessing" unique_id=1200479480]
 visible = false
 follow_viewport_enabled = true
 follow_viewport_scale = 2.0
 
-[node name="Shader_Normalized" type="ColorRect" parent="PostProcessing/Normalized"]
+[node name="Shader_Normalized" type="ColorRect" parent="PostProcessing/Normalized" unique_id=1915412550]
 material = SubResource("ShaderMaterial_d1pg5")
 anchors_preset = 15
 anchor_right = 1.0
@@ -2749,12 +2745,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Filmgrain" type="CanvasLayer" parent="PostProcessing"]
+[node name="Filmgrain" type="CanvasLayer" parent="PostProcessing" unique_id=586457187]
 visible = false
 follow_viewport_enabled = true
 follow_viewport_scale = 2.0
 
-[node name="Shader_Filmgrain" type="ColorRect" parent="PostProcessing/Filmgrain"]
+[node name="Shader_Filmgrain" type="ColorRect" parent="PostProcessing/Filmgrain" unique_id=258291425]
 material = SubResource("ShaderMaterial_r34jc")
 anchors_preset = 15
 anchor_right = 1.0
@@ -2764,12 +2760,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Flashing" type="CanvasLayer" parent="PostProcessing"]
+[node name="Flashing" type="CanvasLayer" parent="PostProcessing" unique_id=118805314]
 visible = false
 follow_viewport_enabled = true
 follow_viewport_scale = 2.0
 
-[node name="Shader_Flashing" type="ColorRect" parent="PostProcessing/Flashing"]
+[node name="Shader_Flashing" type="ColorRect" parent="PostProcessing/Flashing" unique_id=1789110322]
 material = SubResource("ShaderMaterial_rl8xq")
 anchors_preset = 15
 anchor_right = 1.0
@@ -2779,24 +2775,24 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ColorOverlay" type="CanvasLayer" parent="PostProcessing"]
+[node name="ColorOverlay" type="CanvasLayer" parent="PostProcessing" unique_id=2143360515]
 visible = false
 
-[node name="ColorRect" type="ColorRect" parent="PostProcessing/ColorOverlay"]
+[node name="ColorRect" type="ColorRect" parent="PostProcessing/ColorOverlay" unique_id=2055325457]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Thorns3" type="Sprite2D" parent="."]
+[node name="Thorns3" type="Sprite2D" parent="." unique_id=1638607477]
 visible = false
 z_index = 1
 position = Vector2(2, 94)
 scale = Vector2(0.485, 0.33)
 texture = ExtResource("3_5l0u7")
 
-[node name="Thorns4" type="Sprite2D" parent="."]
+[node name="Thorns4" type="Sprite2D" parent="." unique_id=1666019623]
 visible = false
 z_index = 1
 position = Vector2(-5, 107)

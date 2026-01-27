@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dhdhnq55pliab"]
+[gd_scene format=3 uid="uid://dhdhnq55pliab"]
 
 [ext_resource type="PackedScene" uid="uid://4ltw4ue7a55q" path="res://scenes/ui/submenu.tscn" id="1_e5yrl"]
 [ext_resource type="LabelSettings" uid="uid://dvgl0yeqhbjco" path="res://assets/settings/labels/menu_title_label_settingsl.tres" id="2_x463n"]
@@ -10,11 +10,11 @@
 [ext_resource type="Script" uid="uid://dwmukj2lkgaxw" path="res://scripts/ui/menu/BusController.gd" id="7_6jhtp"]
 [ext_resource type="PackedScene" uid="uid://gh1ggcgi0xnd" path="res://scenes/ui/button_h_slider.tscn" id="8_6vocn"]
 
-[node name="SettingsSubmenu" node_paths=PackedStringArray("ui_scalers") instance=ExtResource("1_e5yrl")]
+[node name="SettingsSubmenu" unique_id=651504583 node_paths=PackedStringArray("ui_scalers") instance=ExtResource("1_e5yrl")]
 light_mask = 0
 ui_scalers = [NodePath("BackgroundColor/SettingsButtonSelector/ButtonRowConfig/UIScaler")]
 
-[node name="BackgroundColor" type="ColorRect" parent="." index="0"]
+[node name="BackgroundColor" type="ColorRect" parent="." index="0" unique_id=733031533]
 light_mask = 0
 offset_left = -960.0
 offset_top = -540.0
@@ -24,7 +24,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="Title" type="Label" parent="BackgroundColor" index="0"]
+[node name="Title" type="Label" parent="BackgroundColor" index="0" unique_id=2020505318]
 light_mask = 0
 layout_mode = 1
 anchors_preset = 5
@@ -41,7 +41,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="TotalVolume" type="Label" parent="BackgroundColor" index="1"]
+[node name="TotalVolume" type="Label" parent="BackgroundColor" index="1" unique_id=1878501786]
 light_mask = 0
 layout_mode = 1
 anchors_preset = 8
@@ -62,7 +62,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Music" type="Label" parent="BackgroundColor" index="2"]
+[node name="Music" type="Label" parent="BackgroundColor" index="2" unique_id=660550289]
 light_mask = 0
 layout_mode = 1
 anchors_preset = 8
@@ -82,7 +82,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Sfx" type="Label" parent="BackgroundColor" index="3"]
+[node name="Sfx" type="Label" parent="BackgroundColor" index="3" unique_id=1992523013]
 light_mask = 0
 layout_mode = 1
 anchors_preset = 8
@@ -102,110 +102,110 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="SettingsButtonSelector" parent="BackgroundColor" index="4" node_paths=PackedStringArray("button_rows") instance=ExtResource("4_x305k")]
+[node name="SettingsButtonSelector" parent="BackgroundColor" index="4" unique_id=1262390173 node_paths=PackedStringArray("button_rows") instance=ExtResource("4_x305k")]
 light_mask = 0
 button_rows = [NodePath("ButtonRowConfig"), NodePath("ButtonRowConfig2"), NodePath("ButtonRowConfig3"), NodePath("ButtonRowConfig4")]
 
-[node name="ButtonRowConfig" parent="BackgroundColor/SettingsButtonSelector" index="0" node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
+[node name="ButtonRowConfig" parent="BackgroundColor/SettingsButtonSelector" index="0" unique_id=158886399 node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
 light_mask = 0
 buttons = [NodePath("UIScaler/CloseMenuButton")]
 
-[node name="UIScaler" parent="BackgroundColor/SettingsButtonSelector/ButtonRowConfig" index="0" instance=ExtResource("6_1lcc5")]
+[node name="UIScaler" parent="BackgroundColor/SettingsButtonSelector/ButtonRowConfig" index="0" unique_id=2119966109 instance=ExtResource("6_1lcc5")]
 mobile_position = Vector2(-920, -35)
 mobile_scale = Vector2(1.5, 1.5)
 
-[node name="CloseMenuButton" parent="BackgroundColor/SettingsButtonSelector/ButtonRowConfig/UIScaler" index="0" instance=ExtResource("6_qdxjt")]
+[node name="CloseMenuButton" parent="BackgroundColor/SettingsButtonSelector/ButtonRowConfig/UIScaler" index="0" unique_id=628780823 instance=ExtResource("6_qdxjt")]
 position = Vector2(1810, 110)
 
-[node name="ButtonRowConfig2" parent="BackgroundColor/SettingsButtonSelector" index="1" node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
+[node name="ButtonRowConfig2" parent="BackgroundColor/SettingsButtonSelector" index="1" unique_id=275884745 node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
 light_mask = 0
 buttons = [NodePath("../../BusController/TotalVolumeSlider")]
 
-[node name="ButtonRowConfig3" parent="BackgroundColor/SettingsButtonSelector" index="2" node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
+[node name="ButtonRowConfig3" parent="BackgroundColor/SettingsButtonSelector" index="2" unique_id=1349868920 node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
 light_mask = 0
 buttons = [NodePath("../../BusController/MusicSlider")]
 
-[node name="ButtonRowConfig4" parent="BackgroundColor/SettingsButtonSelector" index="3" node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
+[node name="ButtonRowConfig4" parent="BackgroundColor/SettingsButtonSelector" index="3" unique_id=766568612 node_paths=PackedStringArray("buttons") instance=ExtResource("5_0e47a")]
 light_mask = 0
 buttons = [NodePath("../../BusController/SfxSlider")]
 
-[node name="BusController" type="Node2D" parent="BackgroundColor" index="5"]
+[node name="BusController" type="Node2D" parent="BackgroundColor" index="5" unique_id=1355621461]
 light_mask = 0
 script = ExtResource("7_6jhtp")
 
-[node name="TotalVolumeSlider" parent="BackgroundColor/BusController" index="0" instance=ExtResource("8_6vocn")]
+[node name="TotalVolumeSlider" parent="BackgroundColor/BusController" index="0" unique_id=1318329695 instance=ExtResource("8_6vocn")]
 position = Vector2(960, 430)
 
-[node name="Box" parent="BackgroundColor/BusController/TotalVolumeSlider" index="0"]
+[node name="Box" parent="BackgroundColor/BusController/TotalVolumeSlider" index="0" unique_id=1291513013]
 light_mask = 0
 
-[node name="White" parent="BackgroundColor/BusController/TotalVolumeSlider" index="1"]
-light_mask = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="Ticks" parent="BackgroundColor/BusController/TotalVolumeSlider/White" index="0"]
-light_mask = 0
-
-[node name="White2" parent="BackgroundColor/BusController/TotalVolumeSlider" index="2"]
+[node name="White" parent="BackgroundColor/BusController/TotalVolumeSlider" index="1" unique_id=1399859197]
 light_mask = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="Ticks" parent="BackgroundColor/BusController/TotalVolumeSlider/White2" index="0"]
+[node name="Ticks" parent="BackgroundColor/BusController/TotalVolumeSlider/White" index="0" unique_id=1450479393]
 light_mask = 0
 
-[node name="SliderButtonSrc" parent="BackgroundColor/BusController/TotalVolumeSlider" index="4"]
+[node name="White2" parent="BackgroundColor/BusController/TotalVolumeSlider" index="2" unique_id=1245054766]
+light_mask = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="MusicSlider" parent="BackgroundColor/BusController" index="1" instance=ExtResource("8_6vocn")]
+[node name="Ticks" parent="BackgroundColor/BusController/TotalVolumeSlider/White2" index="0" unique_id=2042773581]
+light_mask = 0
+
+[node name="SliderButtonSrc" parent="BackgroundColor/BusController/TotalVolumeSlider" index="4" unique_id=261766458]
+metadata/_edit_use_anchors_ = true
+
+[node name="MusicSlider" parent="BackgroundColor/BusController" index="1" unique_id=169754020 instance=ExtResource("8_6vocn")]
 position = Vector2(960, 680)
 
-[node name="Box" parent="BackgroundColor/BusController/MusicSlider" index="0"]
+[node name="Box" parent="BackgroundColor/BusController/MusicSlider" index="0" unique_id=1291513013]
 light_mask = 0
 
-[node name="White" parent="BackgroundColor/BusController/MusicSlider" index="1"]
-light_mask = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="Ticks" parent="BackgroundColor/BusController/MusicSlider/White" index="0"]
-light_mask = 0
-
-[node name="White2" parent="BackgroundColor/BusController/MusicSlider" index="2"]
+[node name="White" parent="BackgroundColor/BusController/MusicSlider" index="1" unique_id=1399859197]
 light_mask = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="Ticks" parent="BackgroundColor/BusController/MusicSlider/White2" index="0"]
+[node name="Ticks" parent="BackgroundColor/BusController/MusicSlider/White" index="0" unique_id=1450479393]
 light_mask = 0
 
-[node name="SliderButtonSrc" parent="BackgroundColor/BusController/MusicSlider" index="4"]
+[node name="White2" parent="BackgroundColor/BusController/MusicSlider" index="2" unique_id=1245054766]
+light_mask = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="SliderSFX" parent="BackgroundColor/BusController/MusicSlider" index="5"]
+[node name="Ticks" parent="BackgroundColor/BusController/MusicSlider/White2" index="0" unique_id=2042773581]
+light_mask = 0
+
+[node name="SliderButtonSrc" parent="BackgroundColor/BusController/MusicSlider" index="4" unique_id=261766458]
+metadata/_edit_use_anchors_ = true
+
+[node name="SliderSFX" parent="BackgroundColor/BusController/MusicSlider" index="5" unique_id=172863298]
 bus = &"Music"
 
-[node name="SfxSlider" parent="BackgroundColor/BusController" index="2" instance=ExtResource("8_6vocn")]
+[node name="SfxSlider" parent="BackgroundColor/BusController" index="2" unique_id=1145074313 instance=ExtResource("8_6vocn")]
 position = Vector2(960, 930)
 
-[node name="Box" parent="BackgroundColor/BusController/SfxSlider" index="0"]
+[node name="Box" parent="BackgroundColor/BusController/SfxSlider" index="0" unique_id=1291513013]
 light_mask = 0
 
-[node name="White" parent="BackgroundColor/BusController/SfxSlider" index="1"]
-light_mask = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="Ticks" parent="BackgroundColor/BusController/SfxSlider/White" index="0"]
-light_mask = 0
-
-[node name="White2" parent="BackgroundColor/BusController/SfxSlider" index="2"]
+[node name="White" parent="BackgroundColor/BusController/SfxSlider" index="1" unique_id=1399859197]
 light_mask = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="Ticks" parent="BackgroundColor/BusController/SfxSlider/White2" index="0"]
+[node name="Ticks" parent="BackgroundColor/BusController/SfxSlider/White" index="0" unique_id=1450479393]
 light_mask = 0
 
-[node name="SliderButtonSrc" parent="BackgroundColor/BusController/SfxSlider" index="4"]
+[node name="White2" parent="BackgroundColor/BusController/SfxSlider" index="2" unique_id=1245054766]
+light_mask = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="SliderSFX" parent="BackgroundColor/BusController/SfxSlider" index="5"]
+[node name="Ticks" parent="BackgroundColor/BusController/SfxSlider/White2" index="0" unique_id=2042773581]
+light_mask = 0
+
+[node name="SliderButtonSrc" parent="BackgroundColor/BusController/SfxSlider" index="4" unique_id=261766458]
+metadata/_edit_use_anchors_ = true
+
+[node name="SliderSFX" parent="BackgroundColor/BusController/SfxSlider" index="5" unique_id=172863298]
 bus = &"SFX"
 
 [connection signal="clicked" from="BackgroundColor/SettingsButtonSelector/ButtonRowConfig/UIScaler/CloseMenuButton" to="." method="_on_closed"]

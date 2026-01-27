@@ -1,4 +1,4 @@
-[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dvgl0yeqhbjco"]
+[gd_resource type="LabelSettings" format=3 uid="uid://dvgl0yeqhbjco"]
 
 [ext_resource type="FontFile" uid="uid://f00e528g8awo" path="res://assets/fonts/adrip1.ttf" id="1_5yjwi"]
 

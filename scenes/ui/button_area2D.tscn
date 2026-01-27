@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bm3cidpku330i"]
+[gd_scene format=3 uid="uid://bm3cidpku330i"]
 
 [ext_resource type="LabelSettings" uid="uid://d0ngxbsvkqk2n" path="res://assets/settings/labels/button_label_settings.tres" id="1_gem6f"]
 [ext_resource type="Script" uid="uid://bunicvyctypo" path="res://scripts/ui/SelectableArea2DButton.gd" id="2_qnlvd"]
@@ -23,18 +23,18 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g0ycp"]
 
-[node name="ButtonArea2D" instance=ExtResource("7_4g5or")]
+[node name="ButtonArea2D" unique_id=1029553173 instance=ExtResource("7_4g5or")]
 light_mask = 0
 script = ExtResource("2_qnlvd")
 auto_collider = true
 trigger_through_cancel = false
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1" unique_id=909565556]
 light_mask = 0
 scale = Vector2(1.235, 1)
 sprite_frames = SubResource("SpriteFrames_m6dyt")
 
-[node name="Label" type="Label" parent="." index="2"]
+[node name="Label" type="Label" parent="." index="2" unique_id=1543461642]
 light_mask = 0
 anchors_preset = 8
 anchor_left = 0.5
@@ -53,14 +53,14 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="ClickSFX" type="AudioStreamPlayer" parent="." index="3"]
+[node name="ClickSFX" type="AudioStreamPlayer" parent="." index="3" unique_id=2108907842]
 stream = ExtResource("5_orodj")
 bus = &"SFX"
 
-[node name="Area2DButtonSrc" type="Area2D" parent="." index="4"]
+[node name="Area2DButtonSrc" type="Area2D" parent="." index="4" unique_id=854129777]
 light_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DButtonSrc" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DButtonSrc" index="0" unique_id=1992279127]
 visible = false
 light_mask = 0
 shape = SubResource("RectangleShape2D_g0ycp")

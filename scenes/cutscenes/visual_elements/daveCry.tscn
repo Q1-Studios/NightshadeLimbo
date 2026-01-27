@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dknwno8f20cox"]
+[gd_scene format=3 uid="uid://dknwno8f20cox"]
 
 [ext_resource type="Texture2D" uid="uid://dcqgjx1pajac" path="res://assets/sprites/chibifacesprites.png" id="1_6xptn"]
 
@@ -6,7 +6,7 @@
 atlas = ExtResource("1_6xptn")
 region = Rect2(1199.73, 0.168831, 300.945, 270.72)
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1095395934]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -19,7 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.27, 1.27)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2125147646]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

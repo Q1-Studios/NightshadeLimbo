@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cg8ie5l0qs2ju"]
+[gd_scene format=3 uid="uid://cg8ie5l0qs2ju"]
 
 [ext_resource type="Script" uid="uid://b515u1e77x378" path="res://scripts/attacks/BeamAttack.gd" id="1_ey2ax"]
 [ext_resource type="Texture2D" uid="uid://cqfkbd1tl6fic" path="res://assets/sprites/laserparticle.png" id="2_i2jbm"]
@@ -19,10 +19,10 @@ radial_accel_max = -2.23517e-06
 scale_min = 0.05
 scale_max = 0.1
 
-[node name="BeamAttack" type="RayCast2D"]
+[node name="BeamAttack" type="RayCast2D" unique_id=615778355]
 script = ExtResource("1_ey2ax")
 
-[node name="Texture" type="Sprite2D" parent="."]
+[node name="Texture" type="Sprite2D" parent="." unique_id=521520951]
 texture_repeat = 2
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_l4d8i")
@@ -30,22 +30,22 @@ hframes = 3
 region_enabled = true
 region_rect = Rect2(0, 0, 260, 100)
 
-[node name="Particles" type="Node2D" parent="."]
+[node name="Particles" type="Node2D" parent="." unique_id=1208827576]
 
-[node name="GlobalParticles" type="GPUParticles2D" parent="Particles"]
+[node name="GlobalParticles" type="GPUParticles2D" parent="Particles" unique_id=1706637590]
 amount = 32
 texture = ExtResource("2_i2jbm")
 lifetime = 8.0
 process_material = SubResource("ParticleProcessMaterial_y0ejb")
 
-[node name="LocalParticles" type="GPUParticles2D" parent="Particles"]
+[node name="LocalParticles" type="GPUParticles2D" parent="Particles" unique_id=1684793172]
 amount = 16
 texture = ExtResource("2_i2jbm")
 lifetime = 5.0
 local_coords = true
 process_material = SubResource("ParticleProcessMaterial_y0ejb")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1539839877]
 stream = ExtResource("5_wt4tr")
 volume_db = -5.0
 autoplay = true

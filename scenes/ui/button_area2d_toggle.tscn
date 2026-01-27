@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bogdpw0iwj2bl"]
+[gd_scene format=3 uid="uid://bogdpw0iwj2bl"]
 
 [ext_resource type="PackedScene" uid="uid://bm3cidpku330i" path="res://scenes/ui/button_area2D.tscn" id="1_8w01u"]
 [ext_resource type="Script" uid="uid://br12omkmidj3s" path="res://scripts/ui/SelectableArea2DToggleButton.gd" id="2_u3sjc"]
@@ -20,14 +20,14 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="ButtonArea2DToggle" instance=ExtResource("1_8w01u")]
+[node name="ButtonArea2DToggle" unique_id=576315320 instance=ExtResource("1_8w01u")]
 script = ExtResource("2_u3sjc")
 toggled_fill_color = Color(0.621199, 0, 0.121537, 1)
 
-[node name="FillTexture" type="AnimatedSprite2D" parent="." index="1"]
+[node name="FillTexture" type="AnimatedSprite2D" parent="." index="1" unique_id=614620693]
 visible = false
 sprite_frames = SubResource("SpriteFrames_3yiur")
 
-[node name="ClickOffSFX" type="AudioStreamPlayer" parent="." index="5"]
+[node name="ClickOffSFX" type="AudioStreamPlayer" parent="." index="5" unique_id=750903137]
 stream = ExtResource("5_suk5v")
 bus = &"SFX"

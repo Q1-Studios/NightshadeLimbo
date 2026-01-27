@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cpqmks55fi0m"]
+[gd_scene format=3 uid="uid://cpqmks55fi0m"]
 
 [ext_resource type="Script" uid="uid://bkatmq3ndkiyw" path="res://scripts/game/objects/Obstacle.gd" id="1_wa1la"]
 [ext_resource type="Texture2D" uid="uid://cvl8je1ubaxb5" path="res://assets/sprites/obstacle_pillar.png" id="2_y1h5l"]
@@ -22,23 +22,23 @@ animations = [{
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_kbkjc"]
 polygon = PackedVector2Array(-26, 57, -49, 8, -37, -22, 40, -23, 49, 13, 27, 57)
 
-[node name="Obstacle" type="StaticBody2D"]
+[node name="Obstacle" type="StaticBody2D" unique_id=732024937]
 position = Vector2(450, 700)
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_wa1la")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1010893934]
 position = Vector2(5, 27)
 scale = Vector2(0.385, 0.385)
 sprite_frames = SubResource("SpriteFrames_h0872")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=345002331]
 polygon = PackedVector2Array(-26, 57, -49, 8, -37, -22, 38, -22.6667, 49, 13, 27, 57)
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=777976319]
 occluder = SubResource("OccluderPolygon2D_kbkjc")
 
-[node name="BreakSFX" type="AudioStreamPlayer" parent="."]
+[node name="BreakSFX" type="AudioStreamPlayer" parent="." unique_id=4165238]
 stream = ExtResource("4_jsh6w")
 volume_db = -10.0
 bus = &"SFX"

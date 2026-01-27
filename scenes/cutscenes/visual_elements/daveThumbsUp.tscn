@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0b5k5bag47l6"]
+[gd_scene format=3 uid="uid://d0b5k5bag47l6"]
 
 [ext_resource type="Texture2D" uid="uid://bgi6rvs80e2i6" path="res://assets/sprites/chibisketch.jpg" id="1_2akus"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1519647363]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -15,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.97, 0.97)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=208455474]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

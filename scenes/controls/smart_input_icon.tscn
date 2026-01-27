@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://4i0aipnbtv4g"]
+[gd_scene format=3 uid="uid://4i0aipnbtv4g"]
 
 [ext_resource type="Script" uid="uid://w2n1mbyb75dv" path="res://scripts/controls/SmartInputIcon.gd" id="1_v56qw"]
 [ext_resource type="Texture2D" uid="uid://dethhekpqofps" path="res://assets/sprites/buttons/keyboard/C.png" id="2_vm2vu"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cg4ee6tilfcfj" path="res://assets/sprites/buttons/xbox/Y.png" id="4_acyh6"]
 [ext_resource type="Texture2D" uid="uid://cogegr4ofobmw" path="res://assets/sprites/buttons/nintendo/X.png" id="5_ujpi5"]
 
-[node name="SmartInputIcon" type="Node2D"]
+[node name="SmartInputIcon" type="Node2D" unique_id=1699199247]
 light_mask = 0
 script = ExtResource("1_v56qw")
 keyboard = ExtResource("2_vm2vu")
@@ -16,7 +16,7 @@ playstation = ExtResource("3_cqrvk")
 xbox = ExtResource("4_acyh6")
 nintendo = ExtResource("5_ujpi5")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1076646464]
 light_mask = 0
-scale = Vector2(0.740741, 0.740741)
+scale = Vector2(0.7407407, 0.7407407)
 texture = ExtResource("2_vm2vu")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cud1vqy4x0nn2"]
+[gd_scene format=3 uid="uid://cud1vqy4x0nn2"]
 
 [ext_resource type="PackedScene" uid="uid://bgn5ighrttryb" path="res://scenes/cutscenes/cutsceneABSTRACT.tscn" id="1_bwjam"]
 [ext_resource type="AudioStream" uid="uid://bklpbpee5btea" path="res://assets/music/BGM_HappyEndingPiano.ogg" id="2_6xdq2"]
@@ -18,14 +18,9 @@ Dave finally reawakens from his delirium,
 surrounded by paramedics, in the middle of the road.
 "
 typewriter_pitch = 0.95
-typewriter_pitch_range = 0.05
 typewriter_speed = 1.75
 typewriter_sound = ExtResource("3_8wusx")
-play_music = true
-loop_music = true
 music_change = ExtResource("3_13d54")
-override_skip_time = -1.0
-font_size_override = 35
 
 [sub_resource type="Resource" id="Resource_2jvhs"]
 script = ExtResource("2_up8y8")
@@ -35,47 +30,33 @@ Dave is now at peace.
 With himself. And with the way
 he will continue to live his life."
 typewriter_pitch = 0.95
-typewriter_pitch_range = 0.05
 typewriter_speed = 1.75
 typewriter_sound = ExtResource("3_8wusx")
-play_music = true
-loop_music = true
-override_skip_time = -1.0
-font_size_override = 35
 
 [sub_resource type="Resource" id="Resource_cglp2"]
 script = ExtResource("2_up8y8")
 visual_asset_scene = ExtResource("6_bgy7c")
 display_text = "Perhaps he may even tolerate tomatoes a bit more from now on..."
-typewriter_pitch = 1.0
-typewriter_pitch_range = 0.05
 typewriter_speed = 2.0
 typewriter_sound = ExtResource("3_8wusx")
-play_music = true
 loop_music = false
-override_skip_time = -1.0
 font_size_override = 30
 
 [sub_resource type="Resource" id="Resource_hcasq"]
 script = ExtResource("2_up8y8")
 visual_asset_scene = ExtResource("8_777ye")
 display_text = "The End."
-typewriter_pitch = 1.0
-typewriter_pitch_range = 0.05
-typewriter_speed = 0.3
-play_music = true
 loop_music = false
 music_change = ExtResource("2_6xdq2")
 override_skip_time = 7.5
-font_size_override = 35
 
-[node name="Cutscene" instance=ExtResource("1_bwjam")]
+[node name="Cutscene" unique_id=580961873 instance=ExtResource("1_bwjam")]
 cutscene_data = Array[ExtResource("2_up8y8")]([SubResource("Resource_fux4f"), SubResource("Resource_2jvhs"), SubResource("Resource_cglp2"), SubResource("Resource_hcasq")])
 load_on_skip = ExtResource("9_y74p8")
 loading_screen = false
 
-[node name="VBoxContainer" parent="Control/HBoxContainer" index="1"]
+[node name="VBoxContainer" parent="Control/HBoxContainer" parent_id_path=PackedInt32Array(858132074) index="1" unique_id=1071126347]
 z_index = 1
 
-[node name="Picture" parent="Control/HBoxContainer/VBoxContainer" index="0"]
+[node name="Picture" parent="Control/HBoxContainer/VBoxContainer" index="0" unique_id=1953404243]
 z_index = 3

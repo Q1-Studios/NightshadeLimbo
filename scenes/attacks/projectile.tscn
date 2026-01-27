@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b17k760rfqwu2"]
+[gd_scene format=3 uid="uid://b17k760rfqwu2"]
 
 [ext_resource type="Script" uid="uid://v6s37ptjydbp" path="res://scripts/attacks/Projectile.gd" id="1_jyir0"]
 [ext_resource type="Texture2D" uid="uid://dpk77hai3qmsu" path="res://assets/sprites/projectile.png" id="2_qj00h"]
@@ -25,25 +25,25 @@ scale_max = 0.02
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6q1un"]
 
-[node name="Projectile" type="Area2D"]
+[node name="Projectile" type="Area2D" unique_id=1785558167]
 script = ExtResource("1_jyir0")
 
-[node name="GlobalParticles" type="GPUParticles2D" parent="."]
+[node name="GlobalParticles" type="GPUParticles2D" parent="." unique_id=811660261]
 amount = 32
 texture = ExtResource("4_5ejsk")
 lifetime = 3.0
 process_material = SubResource("ParticleProcessMaterial_g6007")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=727010046]
 position = Vector2(-21, 0)
 scale = Vector2(0.0409164, 0.0409164)
 texture = ExtResource("2_qj00h")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=40419716]
 scale = Vector2(1.425, 0.86)
 shape = SubResource("CircleShape2D_6q1un")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1846968901]
 stream = ExtResource("3_hrpa6")
 volume_db = -5.0
 autoplay = true

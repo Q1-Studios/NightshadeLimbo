@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://pjkdh4p2ppq2"]
+[gd_scene format=3 uid="uid://pjkdh4p2ppq2"]
 
 [ext_resource type="Texture2D" uid="uid://by7sp5ronuisv" path="res://assets/sprites/tomatohorror.png" id="1_vy27a"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=224846058]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -15,14 +15,14 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.27, 1.27)
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=881877738]
 anchors_preset = 0
 offset_top = -66.225
 offset_right = 40.0
 offset_bottom = -26.225
 scale = Vector2(0.515, 0.515)
 
-[node name="TextureRect2" type="TextureRect" parent="Control"]
+[node name="TextureRect2" type="TextureRect" parent="Control" unique_id=173156369]
 self_modulate = Color(1, 1, 1, 0.45098)
 layout_mode = 1
 anchors_preset = 15

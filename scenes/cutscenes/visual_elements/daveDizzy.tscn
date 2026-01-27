@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1widkgmld7nu"]
+[gd_scene format=3 uid="uid://d1widkgmld7nu"]
 
 [ext_resource type="Texture2D" uid="uid://dcqgjx1pajac" path="res://assets/sprites/chibifacesprites.png" id="1_u76ny"]
 
@@ -51,7 +51,7 @@ _data = {
 &"dizzy": SubResource("Animation_sm0k2")
 }
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1954553785]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -64,7 +64,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.885, 1.885)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=89172019]
 self_modulate = Color(1, 1, 1, 0.298039)
 layout_mode = 1
 anchors_preset = 15
@@ -75,8 +75,6 @@ grow_vertical = 2
 texture = SubResource("AtlasTexture_oydp1")
 stretch_mode = 5
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
-libraries = {
-"": SubResource("AnimationLibrary_ac7tq")
-}
-autoplay = "dizzy"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect" unique_id=855019337]
+libraries/ = SubResource("AnimationLibrary_ac7tq")
+autoplay = &"dizzy"

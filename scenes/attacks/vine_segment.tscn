@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://sqglvltvgjlb"]
+[gd_scene format=3 uid="uid://sqglvltvgjlb"]
 
 [ext_resource type="Script" uid="uid://bq50v7kt1x0kb" path="res://scripts/attacks/VineSegment.gd" id="1_slclr"]
 [ext_resource type="Texture2D" uid="uid://bq3n7g1ea24vd" path="res://assets/sprites/vine_segment_straight.png" id="2_h61od"]
@@ -7,11 +7,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18yem"]
 size = Vector2(55, 100)
 
-[node name="VineSegment" type="CollisionShape2D"]
+[node name="VineSegment" type="CollisionShape2D" unique_id=195895791]
 shape = SubResource("RectangleShape2D_18yem")
 script = ExtResource("1_slclr")
 
-[node name="Texture" type="Sprite2D" parent="."]
+[node name="Texture" type="Sprite2D" parent="." unique_id=398358639]
 texture_repeat = 2
 position = Vector2(9.315, 0)
 scale = Vector2(0.665, 1)
@@ -19,6 +19,6 @@ texture = ExtResource("2_h61od")
 region_enabled = true
 region_rect = Rect2(0, 0, 260, 100)
 
-[node name="GapFill" type="Sprite2D" parent="."]
+[node name="GapFill" type="Sprite2D" parent="." unique_id=963843883]
 scale = Vector2(0.11, 0.11)
 texture = ExtResource("3_cejyl")

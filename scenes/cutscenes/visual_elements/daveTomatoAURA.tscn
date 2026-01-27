@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ccdfb1r0me44w"]
+[gd_scene format=3 uid="uid://ccdfb1r0me44w"]
 
 [ext_resource type="Texture2D" uid="uid://djdkq5m8hjrmr" path="res://assets/sprites/tomato_icon.png" id="1_perkc"]
 [ext_resource type="Texture2D" uid="uid://c5uk7355c1umy" path="res://assets/sprites/TomatoRagingAuroSpriteDownscale.png" id="2_cjjsw"]
@@ -81,7 +81,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=362873999]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -94,7 +94,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.27, 1.27)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1197967330]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -104,21 +104,21 @@ grow_vertical = 2
 texture = ExtResource("1_perkc")
 stretch_mode = 5
 
-[node name="Control" type="Control" parent="TextureRect"]
+[node name="Control" type="Control" parent="TextureRect" unique_id=1641709709]
 anchors_preset = 0
 offset_left = -391.992
 offset_top = -237.61
 offset_right = -351.992
 offset_bottom = -197.61
 
-[node name="AuraOverlay" type="AnimatedSprite2D" parent="TextureRect/Control"]
+[node name="AuraOverlay" type="AnimatedSprite2D" parent="TextureRect/Control" unique_id=1096173985]
 self_modulate = Color(1, 1, 1, 0.521569)
 position = Vector2(566.8, 421.28)
 scale = Vector2(1.9, 1.59)
 sprite_frames = SubResource("SpriteFrames_gs0o6")
 autoplay = "default"
 
-[node name="AuraOverlay2" type="AnimatedSprite2D" parent="TextureRect/Control"]
+[node name="AuraOverlay2" type="AnimatedSprite2D" parent="TextureRect/Control" unique_id=1185502455]
 self_modulate = Color(1, 1, 1, 0.568627)
 position = Vector2(566.8, 421.28)
 scale = Vector2(1.9, 1.59)
