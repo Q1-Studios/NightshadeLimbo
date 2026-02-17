@@ -1683,10 +1683,10 @@ texture = ExtResource("10_roquk")
 visible = false
 position = Vector2(960, 540)
 
-[node name="TooHardButton" parent="Camera2D/Overlays/CanvasLayer/IntroScreen/TutorialSubmenu/MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler" index="0"]
+[node name="TooHardButton" parent="Camera2D/Overlays/CanvasLayer/IntroScreen/TutorialSubmenu/MainSubmenu/TutorialButtonSelector/ButtonRowConfig2/UIScaler" parent_id_path=PackedInt32Array(1044798846, 886064505) index="0" unique_id=910808905]
 visible = false
 
-[node name="ClickOffSFX" parent="Camera2D/Overlays/CanvasLayer/IntroScreen/TutorialSubmenu/RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" index="6"]
+[node name="ClickOffSFX" parent="Camera2D/Overlays/CanvasLayer/IntroScreen/TutorialSubmenu/RemnantSubmenu/RemnantButtonSelector/ButtonRowConfig2/ConjureToggle" parent_id_path=PackedInt32Array(1044798846, 977696707) index="6" unique_id=750903137]
 stream = null
 
 [node name="Black" type="ColorRect" parent="Camera2D/Overlays/CanvasLayer/IntroScreen" unique_id=506658066]
@@ -1839,7 +1839,7 @@ buttons = [NodePath("ContinueButton")]
 [node name="ContinueButton" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig" unique_id=393226661 instance=ExtResource("44_8ttwp")]
 position = Vector2(0, -100)
 
-[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig/ContinueButton" index="2"]
+[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig/ContinueButton" index="2" unique_id=1543461642]
 text = "Continue"
 
 [node name="ButtonRowConfig2" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector" unique_id=1184221593 node_paths=PackedStringArray("buttons") instance=ExtResource("47_hsw4w")]
@@ -1848,7 +1848,7 @@ buttons = [NodePath("TutorialButton")]
 [node name="TutorialButton" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig2" unique_id=1781963083 instance=ExtResource("44_8ttwp")]
 position = Vector2(0, 50)
 
-[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig2/TutorialButton" index="2"]
+[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig2/TutorialButton" index="2" unique_id=1543461642]
 text = "Tutorial"
 
 [node name="ButtonRowConfig3" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector" unique_id=483676638 node_paths=PackedStringArray("buttons") instance=ExtResource("47_hsw4w")]
@@ -1858,7 +1858,7 @@ buttons = [NodePath("SettingsButton")]
 [node name="SettingsButton" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig3" unique_id=662039979 instance=ExtResource("44_8ttwp")]
 position = Vector2(0, 200)
 
-[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig3/SettingsButton" index="2"]
+[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig3/SettingsButton" index="2" unique_id=1543461642]
 text = "Settings"
 
 [node name="ButtonRowConfig4" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector" unique_id=447155038 node_paths=PackedStringArray("buttons") instance=ExtResource("47_hsw4w")]
@@ -1868,7 +1868,7 @@ buttons = [NodePath("ExitButton")]
 [node name="ExitButton" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig4" unique_id=617519062 instance=ExtResource("44_8ttwp")]
 position = Vector2(0, 350)
 
-[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig4/ExitButton" index="2"]
+[node name="Label" parent="Camera2D/Overlays/CanvasLayer/PauseScreen/PauseMenu/UIScaler/PauseMenuButtonSelector/ButtonRowConfig4/ExitButton" index="2" unique_id=1543461642]
 text = "Exit to menu"
 
 [node name="TutorialSubmenu" parent="Camera2D/Overlays/CanvasLayer/PauseScreen" unique_id=368460633 instance=ExtResource("57_rmgxc")]

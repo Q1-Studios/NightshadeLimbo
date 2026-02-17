@@ -197,10 +197,10 @@ buttons = [NodePath("StartButton")]
 [node name="StartButton" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig" unique_id=1083298058 instance=ExtResource("3_fx80t")]
 position = Vector2(-711.375, 220)
 
-[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig/StartButton" index="1"]
+[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig/StartButton" index="1" unique_id=909565556]
 scale = Vector2(1.275, 1)
 
-[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig/StartButton" index="2"]
+[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig/StartButton" index="2" unique_id=1543461642]
 text = "Start journey"
 
 [node name="ButtonRowConfig2" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector" unique_id=1182880922 node_paths=PackedStringArray("buttons") instance=ExtResource("9_n4m28")]
@@ -209,10 +209,10 @@ buttons = [NodePath("SettingsButton")]
 [node name="SettingsButton" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig2" unique_id=674282716 instance=ExtResource("3_fx80t")]
 position = Vector2(-719, 345)
 
-[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig2/SettingsButton" index="1"]
+[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig2/SettingsButton" index="1" unique_id=909565556]
 scale = Vector2(1.235, 0.8)
 
-[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig2/SettingsButton" index="2"]
+[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig2/SettingsButton" index="2" unique_id=1543461642]
 text = "Settings"
 
 [node name="ButtonRowConfig3" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector" unique_id=865309267 node_paths=PackedStringArray("buttons") instance=ExtResource("9_n4m28")]
@@ -222,20 +222,20 @@ buttons = [NodePath("CreditsButton"), NodePath("QuitButton")]
 position = Vector2(-805, 450)
 scale = Vector2(0.8, 0.8)
 
-[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/CreditsButton" index="1"]
+[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/CreditsButton" index="1" unique_id=909565556]
 scale = Vector2(0.82, 0.85)
 
-[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/CreditsButton" index="2"]
+[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/CreditsButton" index="2" unique_id=1543461642]
 text = "Credits"
 
 [node name="QuitButton" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3" unique_id=1447677350 instance=ExtResource("3_fx80t")]
 position = Vector2(-625, 450)
 scale = Vector2(0.8, 0.8)
 
-[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/QuitButton" index="1"]
+[node name="AnimatedSprite2D" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/QuitButton" index="1" unique_id=909565556]
 scale = Vector2(0.6, 0.85)
 
-[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/QuitButton" index="2"]
+[node name="Label" parent="UI/MainSubmenu/UIScaler/MainMenuButtonSelector/ButtonRowConfig3/QuitButton" index="2" unique_id=1543461642]
 text = "Quit"
 
 [node name="CreditsSubmenu" parent="UI" unique_id=1488913126 node_paths=PackedStringArray("ui_scalers") instance=ExtResource("20_oquwj")]
@@ -536,7 +536,7 @@ uri = "https://itch.io/jam/mini-jame-gam-34"
 [node name="SettingsSubmenu" parent="UI" unique_id=1665005731 instance=ExtResource("19_dh2sc")]
 visible = false
 
-[node name="MusicSlider" parent="UI/SettingsSubmenu/BackgroundColor/BusController" index="1"]
+[node name="MusicSlider" parent="UI/SettingsSubmenu/BackgroundColor/BusController" parent_id_path=PackedInt32Array(1665005731, 1355621461) index="1" unique_id=169754020]
 acoustic_feedback = false
 
 [node name="SceneTransition" type="ColorRect" parent="UI" unique_id=1103076521 node_paths=PackedStringArray("web_quit_hint")]

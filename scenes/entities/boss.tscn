@@ -2628,13 +2628,11 @@ visible = false
 occluder = SubResource("OccluderPolygon2D_pnw1c")
 
 [node name="LightOccluder2D2" type="LightOccluder2D" parent="OccluderMimic" unique_id=724970372]
+visible = false
 position = Vector2(0, 20.87)
 occluder = SubResource("OccluderPolygon2D_3v6nc")
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="OccluderMimic" unique_id=1378095720]
-visible = false
-position = Vector2(0, -500)
-scale = Vector2(0.609, 1)
 occluder = SubResource("OccluderPolygon2D_26ud2")
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="OccluderMimic" unique_id=1573197348]
