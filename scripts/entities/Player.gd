@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Player
 
-@export var virtual_joystick : VirtualJoystick
+@export var virtual_joystick : CustomVirtualJoystick
 @export var attack_btn : PressableScreenArea
 
 @onready var animation : AnimationPlayer = $Sprite2D/AnimationPlayer

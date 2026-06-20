@@ -356,7 +356,7 @@ animations = [{
 "duration": 0.5,
 "texture": SubResource("AtlasTexture_nsrvk")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]

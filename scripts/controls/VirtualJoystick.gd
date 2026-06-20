@@ -1,5 +1,5 @@
 extends Control
-class_name VirtualJoystick
+class_name CustomVirtualJoystick
 
 @onready var joystick = $Joystick
 @onready var outline = $Joystick/Outline
