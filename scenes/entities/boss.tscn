@@ -2662,6 +2662,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="ScribbeLine" type="Node2D" parent="PostProcessing" unique_id=556578932]
 visible = false
@@ -2696,6 +2697,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="Mirage" type="CanvasLayer" parent="PostProcessing" unique_id=1733133746]
 visible = false
@@ -2711,6 +2713,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Contrast" type="CanvasLayer" parent="PostProcessing" unique_id=1135509565]
@@ -2727,6 +2730,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="Normalized" type="CanvasLayer" parent="PostProcessing" unique_id=1200479480]
 visible = false
@@ -2742,6 +2746,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="Filmgrain" type="CanvasLayer" parent="PostProcessing" unique_id=586457187]
 visible = false
@@ -2757,6 +2762,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="Flashing" type="CanvasLayer" parent="PostProcessing" unique_id=118805314]
 visible = false
@@ -2772,6 +2778,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="ColorOverlay" type="CanvasLayer" parent="PostProcessing" unique_id=2143360515]
 visible = false
@@ -2782,6 +2789,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="Thorns3" type="Sprite2D" parent="." unique_id=1638607477]
 visible = false
