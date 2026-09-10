@@ -29,6 +29,7 @@ scale_max = 0.02
 script = ExtResource("1_jyir0")
 
 [node name="GlobalParticles" type="GPUParticles2D" parent="." unique_id=811660261]
+visible = false
 amount = 32
 texture = ExtResource("4_5ejsk")
 lifetime = 3.0
